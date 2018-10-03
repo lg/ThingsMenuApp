@@ -7,21 +7,38 @@
 //
 
 import Cocoa
+import SwiftAutomation
+import MacOSGlues
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     @IBOutlet weak var window: NSWindow!
-
-
+    
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        statusItem.button?.target = self
+        statusItem.button?.action = #selector(AppDelegate.itemAction(_:))
+        statusItem.button?.title = "AA"
+        
+        
+        
+        do {
+            let xx = try Finder().FinderWindows
+            print("hi")
+        } catch {
+            print(error)
+        }
+        
+        
+        //let appleScript = NSAppleScript(source: "tell application \"Things3\"\n")
     }
-
+    
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
-
-
+    
+    @IBAction func itemAction(_ sender: AnyObject) {
+        
+    }
 }
-

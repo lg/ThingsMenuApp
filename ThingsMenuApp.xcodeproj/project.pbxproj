@@ -10,7 +10,40 @@
 		CBFAC3C02165223F00AD9CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAC3BF2165223F00AD9CD2 /* AppDelegate.swift */; };
 		CBFAC3C22165224000AD9CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFAC3C12165224000AD9CD2 /* Assets.xcassets */; };
 		CBFAC3C52165224000AD9CD2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFAC3C32165224000AD9CD2 /* MainMenu.xib */; };
+		CBFAC3E12165298000AD9CD2 /* MacOSGlues.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFAC3DF2165295600AD9CD2 /* MacOSGlues.framework */; };
+		CBFAC3E22165298000AD9CD2 /* SwiftAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFAC3D92165295600AD9CD2 /* SwiftAutomation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBFAC3D82165295600AD9CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4FFF5D241D899F0D008ED4F5;
+			remoteInfo = SwiftAutomation;
+		};
+		CBFAC3DA2165295600AD9CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F0E39651BAA98A900FF2A96;
+			remoteInfo = aeglue;
+		};
+		CBFAC3DC2165295600AD9CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F9AFB361D5B58EB00A71890;
+			remoteInfo = test;
+		};
+		CBFAC3DE2165295600AD9CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1A57FA1D9E81C300ACFA51;
+			remoteInfo = MacOSGlues;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CBFAC3BC2165223F00AD9CD2 /* ThingsMenuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThingsMenuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +52,7 @@
 		CBFAC3C42165224000AD9CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CBFAC3C62165224000AD9CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBFAC3C72165224000AD9CD2 /* ThingsMenuApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThingsMenuApp.entitlements; sourceTree = "<group>"; };
+		CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftAE.xcodeproj; path = swiftae/SwiftAE.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFAC3E12165298000AD9CD2 /* MacOSGlues.framework in Frameworks */,
+				CBFAC3E22165298000AD9CD2 /* SwiftAutomation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +71,10 @@
 		CBFAC3B32165223F00AD9CD2 = {
 			isa = PBXGroup;
 			children = (
+				CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */,
 				CBFAC3BE2165223F00AD9CD2 /* ThingsMenuApp */,
 				CBFAC3BD2165223F00AD9CD2 /* Products */,
+				CBFAC3E02165298000AD9CD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +96,24 @@
 				CBFAC3C72165224000AD9CD2 /* ThingsMenuApp.entitlements */,
 			);
 			path = ThingsMenuApp;
+			sourceTree = "<group>";
+		};
+		CBFAC3D22165295600AD9CD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAC3D92165295600AD9CD2 /* SwiftAutomation.framework */,
+				CBFAC3DB2165295600AD9CD2 /* aeglue */,
+				CBFAC3DD2165295600AD9CD2 /* test */,
+				CBFAC3DF2165295600AD9CD2 /* MacOSGlues.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBFAC3E02165298000AD9CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,12 +162,49 @@
 			mainGroup = CBFAC3B32165223F00AD9CD2;
 			productRefGroup = CBFAC3BD2165223F00AD9CD2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CBFAC3D22165295600AD9CD2 /* Products */;
+					ProjectRef = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CBFAC3BB2165223F00AD9CD2 /* ThingsMenuApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CBFAC3D92165295600AD9CD2 /* SwiftAutomation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftAutomation.framework;
+			remoteRef = CBFAC3D82165295600AD9CD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBFAC3DB2165295600AD9CD2 /* aeglue */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = aeglue;
+			remoteRef = CBFAC3DA2165295600AD9CD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBFAC3DD2165295600AD9CD2 /* test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test;
+			remoteRef = CBFAC3DC2165295600AD9CD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBFAC3DF2165295600AD9CD2 /* MacOSGlues.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MacOSGlues.framework;
+			remoteRef = CBFAC3DE2165295600AD9CD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CBFAC3BA2165223F00AD9CD2 /* Resources */ = {
