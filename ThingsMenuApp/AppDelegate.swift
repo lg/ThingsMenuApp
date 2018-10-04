@@ -7,38 +7,47 @@
 //
 
 import Cocoa
-import SwiftAutomation
-import MacOSGlues
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
-    @IBOutlet weak var window: NSWindow!
-    
+    @IBOutlet var menu: NSMenu!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        statusItem.button?.target = self
-        statusItem.button?.action = #selector(AppDelegate.itemAction(_:))
-        statusItem.button?.title = "AA"
+        statusItem.menu = menu
+        updateToDoCount()
         
-        
-        
-        do {
-            let xx = try Finder().FinderWindows
-            print("hi")
-        } catch {
-            print(error)
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { (_) in
+            self.updateToDoCount()
         }
-        
-        
-        //let appleScript = NSAppleScript(source: "tell application \"Things3\"\n")
+    }
+    
+    func updateToDoCount() {
+        let things = Things3()
+        if things.isRunning {
+            do {
+                let inboxCount = try things.lists["Inbox"].toDos.count() as Int32
+                let todayCount = try things.lists["Today"].toDos.count() as Int32
+                statusItem.button?.title = String(inboxCount + todayCount)
+                return
+            } catch {
+            }
+        }
+        statusItem.button?.title = "--"
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
     }
     
-    @IBAction func itemAction(_ sender: AnyObject) {
-        
+    @IBAction func openThings(_ sender: AnyObject) {
+        do {
+            try Things3().activate()
+        } catch {
+            print(error)
+        }
+    }
+    
+    @IBAction func quit(_ sender: AnyObject) {
+        NSApplication.shared.terminate(self)
     }
 }
