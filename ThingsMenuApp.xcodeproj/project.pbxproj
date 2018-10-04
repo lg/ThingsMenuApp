@@ -7,45 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB03A41E2166C74900FA7B63 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB03A41D2166C74900FA7B63 /* AppKit.framework */; };
+		CB03A4202166C75000FA7B63 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB03A41F2166C75000FA7B63 /* Carbon.framework */; };
+		CB03A4222166C75600FA7B63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB03A4212166C75600FA7B63 /* Foundation.framework */; };
+		CB03A43F2166C84A00FA7B63 /* TypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4292166C84A00FA7B63 /* TypeExtensions.swift */; };
+		CB03A4402166C84A00FA7B63 /* TermTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A42A2166C84A00FA7B63 /* TermTypes.swift */; };
+		CB03A4412166C84A00FA7B63 /* AEApplicationGlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A42B2166C84A00FA7B63 /* AEApplicationGlue.swift */; };
+		CB03A4422166C84A00FA7B63 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A42C2166C84A00FA7B63 /* AppData.swift */; };
+		CB03A4432166C84A00FA7B63 /* GlueTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A42D2166C84A00FA7B63 /* GlueTable.swift */; };
+		CB03A4442166C84A00FA7B63 /* KeywordConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A42E2166C84A00FA7B63 /* KeywordConverter.swift */; };
+		CB03A4452166C84A00FA7B63 /* SpecifierFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A42F2166C84A00FA7B63 /* SpecifierFormatter.swift */; };
+		CB03A4462166C84A00FA7B63 /* AEConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4302166C84A00FA7B63 /* AEConstants.swift */; };
+		CB03A4472166C84A00FA7B63 /* Specifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4312166C84A00FA7B63 /* Specifier.swift */; };
+		CB03A4482166C84A00FA7B63 /* SDEFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4322166C84A00FA7B63 /* SDEFParser.swift */; };
+		CB03A4492166C84A00FA7B63 /* DefaultTerminology.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4332166C84A00FA7B63 /* DefaultTerminology.swift */; };
+		CB03A44A2166C84A00FA7B63 /* SwiftGlueTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4342166C84A00FA7B63 /* SwiftGlueTemplate.swift */; };
+		CB03A44B2166C84A00FA7B63 /* AETEParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4352166C84A00FA7B63 /* AETEParser.swift */; };
+		CB03A44C2166C84A00FA7B63 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4362166C84A00FA7B63 /* Support.swift */; };
+		CB03A44D2166C84A00FA7B63 /* AppleEventFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4372166C84A00FA7B63 /* AppleEventFormatter.swift */; };
+		CB03A44E2166C84A00FA7B63 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A4392166C84A00FA7B63 /* Errors.swift */; };
+		CB03A4502166C84A00FA7B63 /* SpecifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A43B2166C84A00FA7B63 /* SpecifierExtensions.swift */; };
+		CB03A4512166C84A00FA7B63 /* StaticGlueBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A43C2166C84A00FA7B63 /* StaticGlueBuilder.swift */; };
+		CB03A4532166C84A00FA7B63 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03A43E2166C84A00FA7B63 /* Symbol.swift */; };
 		CB187ACF21666E6C005A2492 /* Things3Glue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB187ACE21666E6B005A2492 /* Things3Glue.swift */; };
-		CB187AD02166B633005A2492 /* SwiftAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFAC3D92165295600AD9CD2 /* SwiftAutomation.framework */; };
 		CBFAC3C02165223F00AD9CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAC3BF2165223F00AD9CD2 /* AppDelegate.swift */; };
 		CBFAC3C22165224000AD9CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFAC3C12165224000AD9CD2 /* Assets.xcassets */; };
 		CBFAC3C52165224000AD9CD2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFAC3C32165224000AD9CD2 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CBFAC3D82165295600AD9CD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4FFF5D241D899F0D008ED4F5;
-			remoteInfo = SwiftAutomation;
-		};
-		CBFAC3DA2165295600AD9CD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F0E39651BAA98A900FF2A96;
-			remoteInfo = aeglue;
-		};
-		CBFAC3DC2165295600AD9CD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F9AFB361D5B58EB00A71890;
-			remoteInfo = test;
-		};
-		CBFAC3DE2165295600AD9CD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F1A57FA1D9E81C300ACFA51;
-			remoteInfo = MacOSGlues;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		CB03A41D2166C74900FA7B63 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CB03A41F2166C75000FA7B63 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		CB03A4212166C75600FA7B63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB03A4292166C84A00FA7B63 /* TypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeExtensions.swift; sourceTree = "<group>"; };
+		CB03A42A2166C84A00FA7B63 /* TermTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermTypes.swift; sourceTree = "<group>"; };
+		CB03A42B2166C84A00FA7B63 /* AEApplicationGlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEApplicationGlue.swift; sourceTree = "<group>"; };
+		CB03A42C2166C84A00FA7B63 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		CB03A42D2166C84A00FA7B63 /* GlueTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlueTable.swift; sourceTree = "<group>"; };
+		CB03A42E2166C84A00FA7B63 /* KeywordConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeywordConverter.swift; sourceTree = "<group>"; };
+		CB03A42F2166C84A00FA7B63 /* SpecifierFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecifierFormatter.swift; sourceTree = "<group>"; };
+		CB03A4302166C84A00FA7B63 /* AEConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEConstants.swift; sourceTree = "<group>"; };
+		CB03A4312166C84A00FA7B63 /* Specifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specifier.swift; sourceTree = "<group>"; };
+		CB03A4322166C84A00FA7B63 /* SDEFParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDEFParser.swift; sourceTree = "<group>"; };
+		CB03A4332166C84A00FA7B63 /* DefaultTerminology.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTerminology.swift; sourceTree = "<group>"; };
+		CB03A4342166C84A00FA7B63 /* SwiftGlueTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGlueTemplate.swift; sourceTree = "<group>"; };
+		CB03A4352166C84A00FA7B63 /* AETEParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AETEParser.swift; sourceTree = "<group>"; };
+		CB03A4362166C84A00FA7B63 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		CB03A4372166C84A00FA7B63 /* AppleEventFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleEventFormatter.swift; sourceTree = "<group>"; };
+		CB03A4382166C84A00FA7B63 /* SwiftAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftAutomation.h; sourceTree = "<group>"; };
+		CB03A4392166C84A00FA7B63 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		CB03A43B2166C84A00FA7B63 /* SpecifierExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecifierExtensions.swift; sourceTree = "<group>"; };
+		CB03A43C2166C84A00FA7B63 /* StaticGlueBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticGlueBuilder.swift; sourceTree = "<group>"; };
+		CB03A43E2166C84A00FA7B63 /* Symbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		CB187ACE21666E6B005A2492 /* Things3Glue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Things3Glue.swift; sourceTree = "<group>"; };
 		CBFAC3BC2165223F00AD9CD2 /* ThingsMenuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThingsMenuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFAC3BF2165223F00AD9CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +66,6 @@
 		CBFAC3C42165224000AD9CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CBFAC3C62165224000AD9CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBFAC3C72165224000AD9CD2 /* ThingsMenuApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThingsMenuApp.entitlements; sourceTree = "<group>"; };
-		CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftAE.xcodeproj; path = swiftae/SwiftAE.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +73,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB187AD02166B633005A2492 /* SwiftAutomation.framework in Frameworks */,
+				CB03A4222166C75600FA7B63 /* Foundation.framework in Frameworks */,
+				CB03A4202166C75000FA7B63 /* Carbon.framework in Frameworks */,
+				CB03A41E2166C74900FA7B63 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB03A4282166C84A00FA7B63 /* SwiftAutomation */ = {
+			isa = PBXGroup;
+			children = (
+				CB03A4292166C84A00FA7B63 /* TypeExtensions.swift */,
+				CB03A42A2166C84A00FA7B63 /* TermTypes.swift */,
+				CB03A42B2166C84A00FA7B63 /* AEApplicationGlue.swift */,
+				CB03A42C2166C84A00FA7B63 /* AppData.swift */,
+				CB03A42D2166C84A00FA7B63 /* GlueTable.swift */,
+				CB03A42E2166C84A00FA7B63 /* KeywordConverter.swift */,
+				CB03A42F2166C84A00FA7B63 /* SpecifierFormatter.swift */,
+				CB03A4302166C84A00FA7B63 /* AEConstants.swift */,
+				CB03A4312166C84A00FA7B63 /* Specifier.swift */,
+				CB03A4322166C84A00FA7B63 /* SDEFParser.swift */,
+				CB03A4332166C84A00FA7B63 /* DefaultTerminology.swift */,
+				CB03A4342166C84A00FA7B63 /* SwiftGlueTemplate.swift */,
+				CB03A4352166C84A00FA7B63 /* AETEParser.swift */,
+				CB03A4362166C84A00FA7B63 /* Support.swift */,
+				CB03A4372166C84A00FA7B63 /* AppleEventFormatter.swift */,
+				CB03A4382166C84A00FA7B63 /* SwiftAutomation.h */,
+				CB03A4392166C84A00FA7B63 /* Errors.swift */,
+				CB03A43B2166C84A00FA7B63 /* SpecifierExtensions.swift */,
+				CB03A43C2166C84A00FA7B63 /* StaticGlueBuilder.swift */,
+				CB03A43E2166C84A00FA7B63 /* Symbol.swift */,
+			);
+			path = SwiftAutomation;
+			sourceTree = "<group>";
+		};
 		CBFAC3B32165223F00AD9CD2 = {
 			isa = PBXGroup;
 			children = (
-				CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */,
 				CBFAC3BE2165223F00AD9CD2 /* ThingsMenuApp */,
 				CBFAC3BD2165223F00AD9CD2 /* Products */,
 				CBFAC3E02165298000AD9CD2 /* Frameworks */,
@@ -89,6 +129,7 @@
 		CBFAC3BE2165223F00AD9CD2 /* ThingsMenuApp */ = {
 			isa = PBXGroup;
 			children = (
+				CB03A4282166C84A00FA7B63 /* SwiftAutomation */,
 				CB187ACE21666E6B005A2492 /* Things3Glue.swift */,
 				CBFAC3BF2165223F00AD9CD2 /* AppDelegate.swift */,
 				CBFAC3C12165224000AD9CD2 /* Assets.xcassets */,
@@ -99,20 +140,12 @@
 			path = ThingsMenuApp;
 			sourceTree = "<group>";
 		};
-		CBFAC3D22165295600AD9CD2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CBFAC3D92165295600AD9CD2 /* SwiftAutomation.framework */,
-				CBFAC3DB2165295600AD9CD2 /* aeglue */,
-				CBFAC3DD2165295600AD9CD2 /* test */,
-				CBFAC3DF2165295600AD9CD2 /* MacOSGlues.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CBFAC3E02165298000AD9CD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB03A4212166C75600FA7B63 /* Foundation.framework */,
+				CB03A41F2166C75000FA7B63 /* Carbon.framework */,
+				CB03A41D2166C74900FA7B63 /* AppKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,49 +204,12 @@
 			mainGroup = CBFAC3B32165223F00AD9CD2;
 			productRefGroup = CBFAC3BD2165223F00AD9CD2 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CBFAC3D22165295600AD9CD2 /* Products */;
-					ProjectRef = CBFAC3D12165295600AD9CD2 /* SwiftAE.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				CBFAC3BB2165223F00AD9CD2 /* ThingsMenuApp */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CBFAC3D92165295600AD9CD2 /* SwiftAutomation.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftAutomation.framework;
-			remoteRef = CBFAC3D82165295600AD9CD2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CBFAC3DB2165295600AD9CD2 /* aeglue */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = aeglue;
-			remoteRef = CBFAC3DA2165295600AD9CD2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CBFAC3DD2165295600AD9CD2 /* test */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = test;
-			remoteRef = CBFAC3DC2165295600AD9CD2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CBFAC3DF2165295600AD9CD2 /* MacOSGlues.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MacOSGlues.framework;
-			remoteRef = CBFAC3DE2165295600AD9CD2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CBFAC3BA2165223F00AD9CD2 /* Resources */ = {
@@ -232,8 +228,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB03A4512166C84A00FA7B63 /* StaticGlueBuilder.swift in Sources */,
 				CBFAC3C02165223F00AD9CD2 /* AppDelegate.swift in Sources */,
 				CB187ACF21666E6C005A2492 /* Things3Glue.swift in Sources */,
+				CB03A44A2166C84A00FA7B63 /* SwiftGlueTemplate.swift in Sources */,
+				CB03A4482166C84A00FA7B63 /* SDEFParser.swift in Sources */,
+				CB03A4412166C84A00FA7B63 /* AEApplicationGlue.swift in Sources */,
+				CB03A44C2166C84A00FA7B63 /* Support.swift in Sources */,
+				CB03A4432166C84A00FA7B63 /* GlueTable.swift in Sources */,
+				CB03A44D2166C84A00FA7B63 /* AppleEventFormatter.swift in Sources */,
+				CB03A44B2166C84A00FA7B63 /* AETEParser.swift in Sources */,
+				CB03A4472166C84A00FA7B63 /* Specifier.swift in Sources */,
+				CB03A4502166C84A00FA7B63 /* SpecifierExtensions.swift in Sources */,
+				CB03A43F2166C84A00FA7B63 /* TypeExtensions.swift in Sources */,
+				CB03A4452166C84A00FA7B63 /* SpecifierFormatter.swift in Sources */,
+				CB03A4402166C84A00FA7B63 /* TermTypes.swift in Sources */,
+				CB03A4442166C84A00FA7B63 /* KeywordConverter.swift in Sources */,
+				CB03A4422166C84A00FA7B63 /* AppData.swift in Sources */,
+				CB03A4532166C84A00FA7B63 /* Symbol.swift in Sources */,
+				CB03A4492166C84A00FA7B63 /* DefaultTerminology.swift in Sources */,
+				CB03A44E2166C84A00FA7B63 /* Errors.swift in Sources */,
+				CB03A4462166C84A00FA7B63 /* AEConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
