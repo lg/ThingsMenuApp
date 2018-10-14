@@ -10,16 +10,16 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    @IBOutlet var menu: NSMenu!
+    @IBOutlet weak var menu: NSMenu!
+
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem.menu = menu
-        updateToDoCount()
         
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { (_) in
-            self.updateToDoCount()
-        }
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: true, block: { [weak self] (_) in
+            self?.updateToDoCount()
+        }).fire()
     }
     
     func updateToDoCount() {
